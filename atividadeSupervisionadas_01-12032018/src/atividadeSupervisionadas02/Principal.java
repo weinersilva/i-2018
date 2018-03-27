@@ -11,7 +11,7 @@ public class Principal {
 	public static void main (String[] args) throws IOException {
 		
 	 String refJpeg = "FFD8FFD9";
-	 String arquivo = "smile.jpeg";
+	 String arquivo = "home.jpg";
 	 String resultado = "";
 	 
 	 Path path = Paths.get(arquivo);
@@ -32,9 +32,9 @@ public class Principal {
 	 }
 	 	 
 	 if(resultado.equals(refJpeg)) {
-		 System.out.printf("Este arquivo est· no formato Jpeg! \n" + "Magic Number: ");
+		 System.out.printf("Este arquivo est√° no formato Jpeg! \n" + "Magic Number: ");
 	 }else {
-		 System.out.printf("Este arquivo n„o est· no formato Jpeg! \n"+ "Magic Number: ");
+		 System.out.printf("Este arquivo n√£o est√° no formato Jpeg! \n"+ "Magic Number: ");
 	 }
 	 
 	 System.out.println(resultado);
