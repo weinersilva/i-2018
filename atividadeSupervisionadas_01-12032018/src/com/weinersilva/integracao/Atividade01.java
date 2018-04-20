@@ -1,13 +1,13 @@
-package atividadeSupervisionadas01;
+package com.weinersilva.integracao;
 
 import java.io.DataInputStream;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-public class Principal {
-
-	public static void main(String[] args) throws IOException {
+public class Atividade01 {
+	
+public static void main(String[] args) throws IOException {
 		
 		try {
 			System.out.println(exibeQuatroBytesEmHexa(args[0]));
