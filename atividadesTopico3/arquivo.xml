@@ -1,0 +1,26 @@
+<alunos>
+    <aluno>
+        <nome>João Silva</nome>
+        <email>js@srv.com</email>
+    </aluno>
+    <aluno>
+        <nome>Brás Lemes</nome>
+        <email>bras@lemes.br</email>
+    </aluno>
+    <aluno>
+        <nome>Fabio Dutra Cardoso</nome>
+        <email>fdc@fdc.com.br</email>
+    </aluno>
+    <aluno>
+        <nome>Carlos Votorantim</nome>
+        <email>carlos@votorantim.com</email>
+    </aluno>
+    <aluno>
+        <nome>Camila Paschoal</nome>
+        <email>camila@gmail.com</email>
+    </aluno>
+    <aluno>
+        <nome>Roberto Dinamite</nome>
+        <email>rd@rd.net</email>
+    </aluno>
+</alunos>
