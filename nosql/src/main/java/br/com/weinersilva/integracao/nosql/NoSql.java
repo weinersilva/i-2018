@@ -1,4 +1,4 @@
-package br.com.weinersilva.nosql;
+package br.com.weinersilva.integracao.nosql;
 
 import org.bson.Document;
 
