@@ -1,7 +1,7 @@
 package br.com.weinersilva.integracao.documents;
 
 import java.io.Serializable;
-import java.util.Calendar;
+import java.util.Date;
 
 import br.com.weinersilva.integracao.enums.Estado;
 import br.com.weinersilva.integracao.enums.Nacionalidade;
@@ -23,7 +23,7 @@ public class DadosDemograficos  implements Serializable {
 	//identificação do individuo
 	private Individuo individuo;
 	//data de nascimento do individuo
-	private Calendar nascimento;
+	private Date nascimento;
 	//acuracia na informação da data de nascimento
 	private String nascimentoAcuracia;
 	//especifica se a data de nascimento informada é precisa do seguimento
@@ -33,7 +33,7 @@ public class DadosDemograficos  implements Serializable {
 	//informa ordem de nascimento do individuo
 	private NascimentoOrdem nascimentoOrdem;
 	//se houver obito informar data do obito
-	private Calendar obito;
+	private Date obito;
 	//acuracia na informacao da data do obito
 	private String obitoAcuracia;
 	//fonte de registro do obito
@@ -59,9 +59,9 @@ public class DadosDemograficos  implements Serializable {
 	//informa o pais do individuo
 	private Pais pais;
 	//informa o data de entrada do individuo se for estrangeiro
-	private Calendar dataEntradaPais;
+	private Date dataEntradaPais;
 	
-	DadosDemograficos(){
+	public DadosDemograficos(){
 		
 	}
 
@@ -73,11 +73,11 @@ public class DadosDemograficos  implements Serializable {
 		this.individuo = individuo;
 	}
 
-	public Calendar getNascimento() {
+	public Date getNascimento() {
 		return nascimento;
 	}
 
-	public void setNascimento(Calendar nascimento) {
+	public void setNascimento(Date nascimento) {
 		this.nascimento = nascimento;
 	}
 
@@ -113,11 +113,11 @@ public class DadosDemograficos  implements Serializable {
 		this.nascimentoOrdem = nascimentoOrdem;
 	}
 
-	public Calendar getObito() {
+	public Date getObito() {
 		return obito;
 	}
 
-	public void setObito(Calendar obito) {
+	public void setObito(Date obito) {
 		this.obito = obito;
 	}
 
@@ -217,11 +217,11 @@ public class DadosDemograficos  implements Serializable {
 		this.pais = pais;
 	}
 
-	public Calendar getDataEntradaPais() {
+	public Date getDataEntradaPais() {
 		return dataEntradaPais;
 	}
 
-	public void setDataEntradaPais(Calendar dataEntradaPais) {
+	public void setDataEntradaPais(Date dataEntradaPais) {
 		this.dataEntradaPais = dataEntradaPais;
 	}
 	

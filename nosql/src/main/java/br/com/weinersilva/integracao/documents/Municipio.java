@@ -44,6 +44,14 @@ public class Municipio implements Serializable {
 	Municipio() {
 	
 	}
+	public Municipio(Long codigo, String nome, Estado estado) {
+		super();
+		this.codigo = codigo;
+		this.nome = nome;
+		this.estado = estado;
+	}
+	
+	
 	
 	
 }

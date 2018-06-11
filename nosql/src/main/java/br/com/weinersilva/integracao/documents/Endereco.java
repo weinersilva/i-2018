@@ -1,7 +1,7 @@
 package br.com.weinersilva.integracao.documents;
 
 import java.io.Serializable;
-import java.util.Calendar;
+import java.util.Date;
 
 import br.com.weinersilva.integracao.enums.EnderecoTipo;
 import br.com.weinersilva.integracao.enums.Estado;
@@ -19,6 +19,8 @@ public class Endereco  implements Serializable {
 	private Surrogate key;
 	//identificação do individuo que possue o endereço
 	private Individuo individuo;
+	//identifica o endereco completo
+	private String descricao;
 	//identifica o bairro do endereço
 	private String bairro;
 	//se pertencer a um distrito, será identificado aqui
@@ -36,17 +38,17 @@ public class Endereco  implements Serializable {
 	//tipo do endereço do individuo (residencia, comercial, etc...)
 	private EnderecoTipo enderecoTipo;
 	//data inicial do individuo no endereço
-	private Calendar dataInicial;
+	private Date dataInicial;
 	//acuracia da data inicial
 	private String dataInicialAcuracia;
 	//data final do individuo no endereço
-	private Calendar dataFinal;
+	private Date dataFinal;
 	//acuracia da data final
 	private String dataFinalAcuracia;
 	//identificação do registro do endereço
 	private EnderecoLinha enderecoLinha;
 	
-	Endereco(){
+	public Endereco(){
 		
 	}
 
@@ -124,12 +126,12 @@ public class Endereco  implements Serializable {
 		this.enderecoTipo = enderecoTipo;
 	}
 
-	public Calendar getDataInicial() {
+	public Date getDataInicial() {
 		return dataInicial;
 	}
 
-	public void setDataInicial(Calendar dataInicial) {
-		this.dataInicial = dataInicial;
+	public void setDataInicial(Date datainicial) {
+		this.dataInicial = datainicial;
 	}
 
 	public String getDataInicialAcuracia() {
@@ -140,11 +142,11 @@ public class Endereco  implements Serializable {
 		this.dataInicialAcuracia = dataInicialAcuracia;
 	}
 
-	public Calendar getDataFinal() {
+	public Date getDataFinal() {
 		return dataFinal;
 	}
 
-	public void setDataFinal(Calendar dataFinal) {
+	public void setDataFinal(Date dataFinal) {
 		this.dataFinal = dataFinal;
 	}
 
@@ -174,6 +176,18 @@ public class Endereco  implements Serializable {
 
 	public void setKey(Surrogate key) {
 		this.key = key;
+	}
+
+
+
+	public String getDescricao() {
+		return descricao;
+	}
+
+
+
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
 	}
 	
 	

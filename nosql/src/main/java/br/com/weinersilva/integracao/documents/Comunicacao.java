@@ -24,7 +24,7 @@ public class Comunicacao  implements Serializable  {
 	//tipo de utilizacao do meio de comunicação (pessoal, comercial, etc..)
 	private ComunicacaoUso comunicacaoUso;
 	
-	Comunicacao(){
+	public Comunicacao(){
 		
 	}
 
