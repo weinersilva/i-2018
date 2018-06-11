@@ -2,8 +2,8 @@ package br.com.weinersilva.integracao.documents;
 
 import java.io.Serializable;
 
-import br.com.weinersilva.integracao.enuns.Preferido;
-import br.com.weinersilva.integracao.enuns.UsoCondicional;
+import br.com.weinersilva.integracao.enums.Preferido;
+import br.com.weinersilva.integracao.enums.UsoCondicional;
 import sun.nio.cs.Surrogate;
 
 /**

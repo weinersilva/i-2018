@@ -1,17 +1,22 @@
-package br.com.weinersilva.integracao.enuns;
+package br.com.weinersilva.integracao.enums;
 
-public enum Preferido {
-
-	PREFERIDO(1, "Este é o nome preferido. Deve ser usado em relatórios, cartas e outros, exceto se um uso específico, comentado adiante, indicar o uso de outro nome."),
-	NÃOPREFERIDO(2, "Este não é o nome preferido.");
+public enum NascimentoOrdem {
+	ÚNICO (1, "Único ou primeiro"),
+	SEGUNDO (2, "Segundo"),
+	TERCEIRO(3, "Terceiro"),
+	QUARTO(4, "Quarto"),
+	QUINTO(5, "Quinto"),
+	SEXTO(6, "Sexto"),
+	OUTROS(7, "Outros"),
+	NÃODECLARADO(8, "Não declarado");
 	
 	private int codigo;
 	private String descricao;
 	
-	Preferido(){	
+	NascimentoOrdem(){	
 	}
 	
-	private Preferido(int codigo, String descricao) {
+	private NascimentoOrdem(int codigo, String descricao) {
 		this.codigo = codigo;
 		this.descricao = descricao;
 	}
@@ -31,4 +36,5 @@ public enum Preferido {
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
 	}
+	
 }

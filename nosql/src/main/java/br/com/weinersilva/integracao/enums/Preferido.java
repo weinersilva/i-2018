@@ -1,23 +1,17 @@
-package br.com.weinersilva.integracao.enuns;
+package br.com.weinersilva.integracao.enums;
 
-public enum ComunicacaoMeio {
+public enum Preferido {
 
-	TELEFONE(1, "Telefone"),
-	CELULAR(2, "Celular"),
-	FAX(3, "Fax"),
-	PAGER(4, "Pager"),
-	EMAIL(5, "Email"),
-	URL(6, "URL"),
-	OUTRO(7, "Outro");
+	PREFERIDO(1, "Este é o nome preferido. Deve ser usado em relatórios, cartas e outros, exceto se um uso específico, comentado adiante, indicar o uso de outro nome."),
+	NÃOPREFERIDO(2, "Este não é o nome preferido.");
 	
 	private int codigo;
 	private String descricao;
 	
-	ComunicacaoMeio (){
-		
+	Preferido(){	
 	}
 	
-	private ComunicacaoMeio(int codigo, String descricao) {
+	private Preferido(int codigo, String descricao) {
 		this.codigo = codigo;
 		this.descricao = descricao;
 	}
@@ -37,6 +31,4 @@ public enum ComunicacaoMeio {
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
 	}
-	
-	
 }

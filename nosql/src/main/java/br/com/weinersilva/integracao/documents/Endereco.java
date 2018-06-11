@@ -3,9 +3,9 @@ package br.com.weinersilva.integracao.documents;
 import java.io.Serializable;
 import java.util.Calendar;
 
-import br.com.weinersilva.integracao.enuns.EnderecoTipo;
-import br.com.weinersilva.integracao.enuns.Estado;
-import br.com.weinersilva.integracao.enuns.Pais;
+import br.com.weinersilva.integracao.enums.EnderecoTipo;
+import br.com.weinersilva.integracao.enums.Estado;
+import br.com.weinersilva.integracao.enums.Pais;
 /**
  * 
  * @author WeinerSilva

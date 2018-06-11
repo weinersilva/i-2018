@@ -1,4 +1,4 @@
-package br.com.weinersilva.integracao.enuns;
+package br.com.weinersilva.integracao.enums;
 
 public enum Uso {
 	RELATÓRIO(1, "Relatório", "R"),

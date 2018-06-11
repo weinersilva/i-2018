@@ -1,18 +1,20 @@
-package br.com.weinersilva.integracao.enuns;
+package br.com.weinersilva.integracao.enums;
 
-public enum ComunicacaoUso {
+public enum ComunicacaoPreferencia {
 
-	COMERCIAL(1, "Comercial"),
-	PESSOAL(2, "Pessoal"),
-	COMERCIALOUPESSOAL(3, "Comercial ou Pessoal");
+	HORARIOCOMERCIAL(1,"Horário Comercial"),
+	DURANTEODIA(2, "Durante o dia"),
+	FINAISDESEMANA(3, "Finais de semana"),
+	QUALQUERHORA(4, "Qualquer hora"),
+	PERIODONOTURNO(5, "Período noturno");
 	
 	private int codigo;
 	private String descricao;
 	
-	ComunicacaoUso(){
+	ComunicacaoPreferencia(){
 	}
 	
-	private ComunicacaoUso(int codigo, String descricao) {
+	private ComunicacaoPreferencia(int codigo, String descricao) {
 		this.codigo = codigo;
 		this.descricao = descricao;
 	}

@@ -3,7 +3,7 @@ package br.com.weinersilva.integracao.documents;
 import java.io.Serializable;
 import java.util.Calendar;
 
-import br.com.weinersilva.integracao.enuns.Uso;
+import br.com.weinersilva.integracao.enums.Uso;
 /**
  * 
  * @author WeinerSilva

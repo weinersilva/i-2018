@@ -2,9 +2,9 @@ package br.com.weinersilva.integracao.documents;
 
 import java.io.Serializable;
 
-import br.com.weinersilva.integracao.enuns.ComunicacaoMeio;
-import br.com.weinersilva.integracao.enuns.ComunicacaoPreferencia;
-import br.com.weinersilva.integracao.enuns.ComunicacaoUso;
+import br.com.weinersilva.integracao.enums.ComunicacaoMeio;
+import br.com.weinersilva.integracao.enums.ComunicacaoPreferencia;
+import br.com.weinersilva.integracao.enums.ComunicacaoUso;
 /**
  * 
  * @author WeinerSilva

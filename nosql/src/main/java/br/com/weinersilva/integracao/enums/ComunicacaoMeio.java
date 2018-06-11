@@ -1,22 +1,23 @@
-package br.com.weinersilva.integracao.enuns;
+package br.com.weinersilva.integracao.enums;
 
-public enum NascimentoOrdem {
-	ÚNICO (1, "Único ou primeiro"),
-	SEGUNDO (2, "Segundo"),
-	TERCEIRO(3, "Terceiro"),
-	QUARTO(4, "Quarto"),
-	QUINTO(5, "Quinto"),
-	SEXTO(6, "Sexto"),
-	OUTROS(7, "Outros"),
-	NÃODECLARADO(8, "Não declarado");
+public enum ComunicacaoMeio {
+
+	TELEFONE(1, "Telefone"),
+	CELULAR(2, "Celular"),
+	FAX(3, "Fax"),
+	PAGER(4, "Pager"),
+	EMAIL(5, "Email"),
+	URL(6, "URL"),
+	OUTRO(7, "Outro");
 	
 	private int codigo;
 	private String descricao;
 	
-	NascimentoOrdem(){	
+	ComunicacaoMeio (){
+		
 	}
 	
-	private NascimentoOrdem(int codigo, String descricao) {
+	private ComunicacaoMeio(int codigo, String descricao) {
 		this.codigo = codigo;
 		this.descricao = descricao;
 	}
@@ -36,5 +37,6 @@ public enum NascimentoOrdem {
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
 	}
+	
 	
 }

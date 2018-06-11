@@ -3,8 +3,8 @@ package br.com.weinersilva.integracao.documents;
 import java.io.Serializable;
 import java.util.Calendar;
 
-import br.com.weinersilva.integracao.enuns.IdentificadorArea;
-import br.com.weinersilva.integracao.enuns.IdentificadorTipo;
+import br.com.weinersilva.integracao.enums.IdentificadorArea;
+import br.com.weinersilva.integracao.enums.IdentificadorTipo;
 import sun.nio.cs.Surrogate;
 /**
  * 

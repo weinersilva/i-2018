@@ -2,7 +2,7 @@ package br.com.weinersilva.integracao.documents;
 
 import java.io.Serializable;
 
-import br.com.weinersilva.integracao.enuns.Estado;
+import br.com.weinersilva.integracao.enums.Estado;
 /**
  * 
  * @author WeinerSilva

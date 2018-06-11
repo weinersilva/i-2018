@@ -1,20 +1,20 @@
-package br.com.weinersilva.integracao.enuns;
+package br.com.weinersilva.integracao.enums;
 
-public enum ComunicacaoPreferencia {
+public enum ObitoFonte {
 
-	HORARIOCOMERCIAL(1,"Horário Comercial"),
-	DURANTEODIA(2, "Durante o dia"),
-	FINAISDESEMANA(3, "Finais de semana"),
-	QUALQUERHORA(4, "Qualquer hora"),
-	PERIODONOTURNO(5, "Período noturno");
+	CARTORIO(1, "Cartório"),
+	PRESTADORSAUDE(2, "Prestador de assistência à saúde"),
+	PARENTE(3, "Parente"),
+	OUTRO(4, "Outro"),
+	DESCONHECIDO(5, "Desconhecido");
 	
 	private int codigo;
 	private String descricao;
 	
-	ComunicacaoPreferencia(){
+	ObitoFonte(){
 	}
 	
-	private ComunicacaoPreferencia(int codigo, String descricao) {
+	private ObitoFonte(int codigo, String descricao) {
 		this.codigo = codigo;
 		this.descricao = descricao;
 	}
@@ -34,4 +34,5 @@ public enum ComunicacaoPreferencia {
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
 	}
+	
 }

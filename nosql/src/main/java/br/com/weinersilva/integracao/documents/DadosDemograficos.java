@@ -3,15 +3,15 @@ package br.com.weinersilva.integracao.documents;
 import java.io.Serializable;
 import java.util.Calendar;
 
-import br.com.weinersilva.integracao.enuns.Estado;
-import br.com.weinersilva.integracao.enuns.Nacionalidade;
-import br.com.weinersilva.integracao.enuns.NascimentoOrdem;
-import br.com.weinersilva.integracao.enuns.NascimentoPluralidade;
-import br.com.weinersilva.integracao.enuns.ObitoFonte;
-import br.com.weinersilva.integracao.enuns.Pais;
-import br.com.weinersilva.integracao.enuns.Raca;
-import br.com.weinersilva.integracao.enuns.Sexo;
-import br.com.weinersilva.integracao.enuns.SituacaoFamiliar;
+import br.com.weinersilva.integracao.enums.Estado;
+import br.com.weinersilva.integracao.enums.Nacionalidade;
+import br.com.weinersilva.integracao.enums.NascimentoOrdem;
+import br.com.weinersilva.integracao.enums.NascimentoPluralidade;
+import br.com.weinersilva.integracao.enums.ObitoFonte;
+import br.com.weinersilva.integracao.enums.Pais;
+import br.com.weinersilva.integracao.enums.Raca;
+import br.com.weinersilva.integracao.enums.Sexo;
+import br.com.weinersilva.integracao.enums.SituacaoFamiliar;
 /**
  * 
  * @author WeinerSilva

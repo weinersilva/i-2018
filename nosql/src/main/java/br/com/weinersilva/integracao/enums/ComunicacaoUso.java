@@ -1,20 +1,18 @@
-package br.com.weinersilva.integracao.enuns;
+package br.com.weinersilva.integracao.enums;
 
-public enum ObitoFonte {
+public enum ComunicacaoUso {
 
-	CARTORIO(1, "Cartório"),
-	PRESTADORSAUDE(2, "Prestador de assistência à saúde"),
-	PARENTE(3, "Parente"),
-	OUTRO(4, "Outro"),
-	DESCONHECIDO(5, "Desconhecido");
+	COMERCIAL(1, "Comercial"),
+	PESSOAL(2, "Pessoal"),
+	COMERCIALOUPESSOAL(3, "Comercial ou Pessoal");
 	
 	private int codigo;
 	private String descricao;
 	
-	ObitoFonte(){
+	ComunicacaoUso(){
 	}
 	
-	private ObitoFonte(int codigo, String descricao) {
+	private ComunicacaoUso(int codigo, String descricao) {
 		this.codigo = codigo;
 		this.descricao = descricao;
 	}
@@ -34,5 +32,4 @@ public enum ObitoFonte {
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
 	}
-	
 }

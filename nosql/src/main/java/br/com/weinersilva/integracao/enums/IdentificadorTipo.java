@@ -1,4 +1,4 @@
-package br.com.weinersilva.integracao.enuns;
+package br.com.weinersilva.integracao.enums;
 
 public enum IdentificadorTipo {
 	ÚNICO(1, "Único dentro da organização"),

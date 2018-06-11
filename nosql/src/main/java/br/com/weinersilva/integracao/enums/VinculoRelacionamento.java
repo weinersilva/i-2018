@@ -1,4 +1,4 @@
-package br.com.weinersilva.integracao.enuns;
+package br.com.weinersilva.integracao.enums;
 
 import java.util.ArrayList;
 import java.util.Collections;

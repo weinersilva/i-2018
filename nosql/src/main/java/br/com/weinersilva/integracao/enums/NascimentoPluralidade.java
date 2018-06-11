@@ -1,4 +1,4 @@
-package br.com.weinersilva.integracao.enuns;
+package br.com.weinersilva.integracao.enums;
 
 public enum NascimentoPluralidade {
 	ÚNICO (1, "Único"),
