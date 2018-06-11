@@ -1,40 +1,56 @@
 package br.com.weinersilva.integracao.documents;
 
+import java.io.Serializable;
 import java.util.Calendar;
 
 import br.com.weinersilva.integracao.enuns.EnderecoTipo;
 import br.com.weinersilva.integracao.enuns.Estado;
 import br.com.weinersilva.integracao.enuns.Pais;
+/**
+ * 
+ * @author WeinerSilva
+ * classe representante do endereço do individuo
+ */
+import sun.nio.cs.Surrogate;
+public class Endereco  implements Serializable {
 
-public class Endereco {
-
-	private String id;
+	private static final long serialVersionUID = 1L;
+	//identificação do endereço
+	private Surrogate key;
+	//identificação do individuo que possue o endereço
 	private Individuo individuo;
+	//identifica o bairro do endereço
 	private String bairro;
+	//se pertencer a um distrito, será identificado aqui
 	private String distrito;
+	//identifica o municipio do endereço
 	private Municipio municipio;
+	//identifica o estado do endereço
 	private Estado estado;
+	//identifica o pais do endereço
 	private Pais pais;
+	//identifica o cep do endereço
 	private String cep;
+	//se houver caixa postal, será identificada aqui
 	private String caixaPostal;
+	//tipo do endereço do individuo (residencia, comercial, etc...)
 	private EnderecoTipo enderecoTipo;
+	//data inicial do individuo no endereço
 	private Calendar dataInicial;
+	//acuracia da data inicial
 	private String dataInicialAcuracia;
+	//data final do individuo no endereço
 	private Calendar dataFinal;
+	//acuracia da data final
 	private String dataFinalAcuracia;
+	//identificação do registro do endereço
 	private EnderecoLinha enderecoLinha;
 	
 	Endereco(){
 		
 	}
 
-	public String getId() {
-		return id;
-	}
-
-	public void setId(String id) {
-		this.id = id;
-	}
+	
 
 	public Individuo getIndividuo() {
 		return individuo;
@@ -146,6 +162,18 @@ public class Endereco {
 
 	public void setEnderecoLinha(EnderecoLinha enderecoLinha) {
 		this.enderecoLinha = enderecoLinha;
+	}
+
+
+
+	public Surrogate getKey() {
+		return key;
+	}
+
+
+
+	public void setKey(Surrogate key) {
+		this.key = key;
 	}
 	
 	

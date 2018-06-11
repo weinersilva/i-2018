@@ -1,26 +1,35 @@
 package br.com.weinersilva.integracao.documents;
 
-public class Individuo {
+import java.io.Serializable;
 
-	private String id;
+import sun.nio.cs.Surrogate;
+
+/**
+ * 
+ * @author WeinerSilva
+ * registro do individuo no sistema
+ */
+public class Individuo  implements Serializable {
+	
+	private static final long serialVersionUID = 1L;
+	//identificação do individuo
+	private Surrogate key;
+	//identificação do identificador do individuo
 	private Identificador identificador;
+	//nomes do individuo
 	private Nomes nomes;
+	//aborda os dados demograficos do individuo
 	private DadosDemograficos dadosDemograficos;
+	//identifica os endereços do individuo
 	private Endereco endereco;
+	//identifica os meios de comunicação do individuo (fone, email, etc..)
 	private Comunicacao comunicacao;
+	//identifica os vinculos que o individuo possue
 	private Vinculos vinculos;
 	
 	
-	Individuo(){
+	public Individuo(){
 		
-	}
-
-	public String getId() {
-		return id;
-	}
-
-	public void setId(String id) {
-		this.id = id;
 	}
 
 	public Identificador getIdentificador() {
@@ -69,6 +78,21 @@ public class Individuo {
 
 	public void setVinculos(Vinculos vinculos) {
 		this.vinculos = vinculos;
+	}
+
+	public Surrogate getKey() {
+		return key;
+	}
+
+	public void setKey(Surrogate key) {
+		this.key = key;
+	}
+
+	@Override
+	public String toString() {
+		return "Individuo [key=" + key + ", identificador=" + identificador + ", nomes=" + nomes
+				+ ", dadosDemograficos=" + dadosDemograficos + ", endereco=" + endereco + ", comunicacao=" + comunicacao
+				+ ", vinculos=" + vinculos + "]";
 	}
 	
 	

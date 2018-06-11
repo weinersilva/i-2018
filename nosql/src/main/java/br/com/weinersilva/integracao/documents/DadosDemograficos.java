@@ -1,39 +1,64 @@
 package br.com.weinersilva.integracao.documents;
 
+import java.io.Serializable;
 import java.util.Calendar;
 
 import br.com.weinersilva.integracao.enuns.Estado;
 import br.com.weinersilva.integracao.enuns.Nacionalidade;
 import br.com.weinersilva.integracao.enuns.NascimentoOrdem;
 import br.com.weinersilva.integracao.enuns.NascimentoPluralidade;
-import br.com.weinersilva.integracao.enuns.NascimentoSeguimento;
 import br.com.weinersilva.integracao.enuns.ObitoFonte;
 import br.com.weinersilva.integracao.enuns.Pais;
 import br.com.weinersilva.integracao.enuns.Raca;
 import br.com.weinersilva.integracao.enuns.Sexo;
 import br.com.weinersilva.integracao.enuns.SituacaoFamiliar;
+/**
+ * 
+ * @author WeinerSilva
+ * Classe que representa os dados demograficos do individuo
+ */
+public class DadosDemograficos  implements Serializable {
 
-public class DadosDemograficos {
-
+	private static final long serialVersionUID = 1L;
+	//identificação do individuo
 	private Individuo individuo;
+	//data de nascimento do individuo
 	private Calendar nascimento;
+	//acuracia na informação da data de nascimento
 	private String nascimentoAcuracia;
-	private NascimentoSeguimento nascimentoSeguimento;
+	//especifica se a data de nascimento informada é precisa do seguimento
+	private int nascimentoSeguimento;
+	//informa a pluridade de nascimento do individuo
 	private NascimentoPluralidade nascimentoPluralidade;
+	//informa ordem de nascimento do individuo
 	private NascimentoOrdem nascimentoOrdem;
+	//se houver obito informar data do obito
 	private Calendar obito;
+	//acuracia na informacao da data do obito
 	private String obitoAcuracia;
+	//fonte de registro do obito
 	private ObitoFonte obitoFonte;
+	//informa o sexo do individuo
 	private Sexo sexo;
+	//informa o nome da mãe do individuo
 	private String mae;
+	//informa o nome do pai do individuo
 	private String pai;
+	//informa a situação familiar do individuo
 	private SituacaoFamiliar situacaoFamiliar;
+	//informa a raça do individuo
 	private Raca raca;
+	//registra algum comentario
 	private String comentario;
+	//informa a nacionalidade do individuo
 	private Nacionalidade nacionalidade;
+	//informa o municipio do individuo
 	private Municipio municipio;
+	//informa o estado do individuo
 	private Estado estado;
+	//informa o pais do individuo
 	private Pais pais;
+	//informa o data de entrada do individuo se for estrangeiro
 	private Calendar dataEntradaPais;
 	
 	DadosDemograficos(){
@@ -64,11 +89,11 @@ public class DadosDemograficos {
 		this.nascimentoAcuracia = nascimentoAcuracia;
 	}
 
-	public NascimentoSeguimento getNascimentoSeguimento() {
+	public int getNascimentoSeguimento() {
 		return nascimentoSeguimento;
 	}
 
-	public void setNascimentoSeguimento(NascimentoSeguimento nascimentoSeguimento) {
+	public void setNascimentoSeguimento(int nascimentoSeguimento) {
 		this.nascimentoSeguimento = nascimentoSeguimento;
 	}
 

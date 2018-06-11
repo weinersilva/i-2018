@@ -1,30 +1,40 @@
 package br.com.weinersilva.integracao.documents;
 
+import java.io.Serializable;
+
 import br.com.weinersilva.integracao.enuns.Preferido;
 import br.com.weinersilva.integracao.enuns.UsoCondicional;
+import sun.nio.cs.Surrogate;
 
-public class Nomes {
+/**
+ * 
+ * @author WeinerSilva
+ * classe responsavel por registrar nomes dos individuos
+ */
+public class Nomes  implements Serializable {
 
-	private String id;
+	private static final long serialVersionUID = 1L;
+	//identificação do nome
+	private Surrogate key;
+	//instancia um individuo
 	private Individuo individuo;
+	//registra titulos se o individuo tiver
 	private String titulos;
+	//nome do individuo
 	private String nome;
+	//sobrenomes do individuo
 	private String sobrenome;
+	//registro se o nome é o preferido ou não
 	private Preferido preferido;
+	//indicador de condições especificas ou regras do nome do individuo
 	private UsoCondicional usoCondicional;
+	//classificação que permite a diferenciação entre os usos dos nomes registrados do individuo
 	private Utilizacao utilizacao;
-	private Representacao representacao;
+	//identifica quando o nome do individuo é baseado em fonte ou caractere alternativo(outra lingua por exemplo)
+	private String representacao;
 	
 	Nomes(){
 		
-	}
-
-	public String getId() {
-		return id;
-	}
-
-	public void setId(String id) {
-		this.id = id;
 	}
 
 	public String getTitulos() {
@@ -75,11 +85,11 @@ public class Nomes {
 		this.utilizacao = utilizacao;
 	}
 
-	public Representacao getRepresentacao() {
+	public String getRepresentacao() {
 		return representacao;
 	}
 
-	public void setRepresentacao(Representacao representacao) {
+	public void setRepresentacao(String representacao) {
 		this.representacao = representacao;
 	}
 
@@ -89,6 +99,14 @@ public class Nomes {
 
 	public void setIndividuo(Individuo individuo) {
 		this.individuo = individuo;
+	}
+
+	public Surrogate getKey() {
+		return key;
+	}
+
+	public void setKey(Surrogate key) {
+		this.key = key;
 	}
 	
 	

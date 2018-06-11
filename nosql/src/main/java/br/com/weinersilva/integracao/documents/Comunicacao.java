@@ -1,15 +1,27 @@
 package br.com.weinersilva.integracao.documents;
 
+import java.io.Serializable;
+
 import br.com.weinersilva.integracao.enuns.ComunicacaoMeio;
 import br.com.weinersilva.integracao.enuns.ComunicacaoPreferencia;
 import br.com.weinersilva.integracao.enuns.ComunicacaoUso;
+/**
+ * 
+ * @author WeinerSilva
+ * Classe de registro dos tipos de comunicação cadastradas aos individuos
+ */
+public class Comunicacao  implements Serializable  {
 
-public class Comunicacao {
-	
+	private static final long serialVersionUID = 1L;
+	//instancia do individuo
 	private Individuo individuo;
+	//tipo do registro de comunicação (telefone, email, etc...)
 	private ComunicacaoMeio comunicacaoMeio;
+	//tipo de preferencia para contato
 	private ComunicacaoPreferencia comunicacaoPreferencia;
+	//descricao da comunicacao
 	private String detalhe;
+	//tipo de utilizacao do meio de comunicação (pessoal, comercial, etc..)
 	private ComunicacaoUso comunicacaoUso;
 	
 	Comunicacao(){
