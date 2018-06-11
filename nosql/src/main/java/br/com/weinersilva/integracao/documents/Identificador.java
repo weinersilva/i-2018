@@ -1,7 +1,7 @@
 package br.com.weinersilva.integracao.documents;
 
 import java.io.Serializable;
-import java.util.Calendar;
+import java.util.Date;
 
 import br.com.weinersilva.integracao.enums.IdentificadorArea;
 import br.com.weinersilva.integracao.enums.IdentificadorTipo;
@@ -27,7 +27,7 @@ public class Identificador  implements Serializable  {
 	//organização que expediu o identificador do individuo
 	private String emissor;
 	//data de emissao do identificador
-	private Calendar dataEmissao;
+	private Date dataEmissao;
 	//identificação da certidao utilizada no cadastro
 	private Certidao certidao;
 	//identificacao da ctps do individuo
@@ -35,7 +35,7 @@ public class Identificador  implements Serializable  {
 	//identificacao do titulo de eleitor do individuo
 	private TituloEleitoral tituloEleitoral;
 	
-	Identificador(){
+	public Identificador(){
 		
 	}
 
@@ -73,11 +73,11 @@ public class Identificador  implements Serializable  {
 		this.emissor = emissor;
 	}
 
-	public Calendar getDataEmissao() {
+	public Date getDataEmissao() {
 		return dataEmissao;
 	}
 
-	public void setDataEmissao(Calendar dataEmissao) {
+	public void setDataEmissao(Date dataEmissao) {
 		this.dataEmissao = dataEmissao;
 	}
 

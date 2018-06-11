@@ -33,7 +33,7 @@ public class Nomes  implements Serializable {
 	//identifica quando o nome do individuo é baseado em fonte ou caractere alternativo(outra lingua por exemplo)
 	private String representacao;
 	
-	Nomes(){
+	public Nomes(){
 		
 	}
 

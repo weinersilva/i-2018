@@ -2,6 +2,7 @@ package br.com.weinersilva.integracao.documents;
 
 import java.io.Serializable;
 import java.util.Calendar;
+import java.util.Date;
 
 import br.com.weinersilva.integracao.enums.Uso;
 /**
@@ -21,7 +22,7 @@ public class Utilizacao  implements Serializable {
 	//identificador que está vinculado ao nome
 	private Identificador identificador;
 	//data inicial da utilização
-	private Calendar datainicial;
+	private Date datainicial;
 	//data final da utilização
 	private Calendar datafinal;
 	public Nomes getNome() {
@@ -42,11 +43,11 @@ public class Utilizacao  implements Serializable {
 	public void setIdentificador(Identificador identificador) {
 		this.identificador = identificador;
 	}
-	public Calendar getDatainicial() {
+	public Date getDatainicial() {
 		return datainicial;
 	}
-	public void setDatainicial(Calendar datainicial) {
-		this.datainicial = datainicial;
+	public void setDatainicial(Date date) {
+		this.datainicial = date;
 	}
 	public Calendar getDatafinal() {
 		return datafinal;
@@ -55,7 +56,7 @@ public class Utilizacao  implements Serializable {
 		this.datafinal = datafinal;
 	}
 	
-	Utilizacao(){
+	public Utilizacao(){
 		
 	}
 	@Override

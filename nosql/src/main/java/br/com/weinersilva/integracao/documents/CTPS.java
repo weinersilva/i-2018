@@ -41,7 +41,7 @@ public class CTPS  implements Serializable {
 		return "CTPS [individuo=" + individuo + ", serie=" + serie + ", estado=" + estado + "]";
 	}
 	
-	CTPS(){
+	public CTPS(){
 		
 	}
 }

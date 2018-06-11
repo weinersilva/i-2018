@@ -36,7 +36,7 @@ public class TituloEleitoral  implements Serializable  {
 		this.zona = zona;
 	}
 	
-	TituloEleitoral(){
+	public TituloEleitoral(){
 		
 	}
 	@Override

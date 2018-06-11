@@ -59,7 +59,7 @@ public class Certidao  implements Serializable {
 		this.termo = termo;
 	}
 	
-	Certidao(){
+	public Certidao(){
 		
 	}
 	@Override
